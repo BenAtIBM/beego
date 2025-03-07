@@ -267,6 +267,9 @@ func (app *HttpServer) Run(addr string, mws ...MiddleWare) {
 					ClientAuth: tls.ClientAuthType(app.Cfg.Listen.ClientAuth),
 				}
 			}
+			//Force min tls version to 1.2 for Angelica Otero (Mar6 2025) slack stating failing security
+			//scan due to TLS 1.0/1.1 being served.
+			app.Server.TLSConfig.MinVersion = tls.VersionTLS12
 			if err := app.Server.ListenAndServeTLS(app.Cfg.Listen.HTTPSCertFile, app.Cfg.Listen.HTTPSKeyFile); err != nil {
 				logs.Critical("ListenAndServeTLS: ", err)
 				time.Sleep(100 * time.Microsecond)

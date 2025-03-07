@@ -140,6 +140,9 @@ func (srv *Server) ListenTLS(certFile string, keyFile string) (net.Listener, err
 		log.Println(err)
 		return nil, err
 	}
+	//Force min tls version to 1.2 for Angelica Otero (Mar6 2025) slack stating failing security
+	//scan due to TLS 1.0/1.1 being served.
+	srv.TLSConfig.MinVersion = tls.VersionTLS12
 	tlsListener := tls.NewListener(tcpKeepAliveListener{ln.(*net.TCPListener)}, srv.TLSConfig)
 	return tlsListener, nil
 }
