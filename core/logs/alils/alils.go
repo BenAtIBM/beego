@@ -8,7 +8,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/beego/beego/v2/core/logs"
+	"github.com/BenAtIBM/beego/v2/core/logs"
 )
 
 const (

@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/beego/beego/v2/server/web"
-	"github.com/beego/beego/v2/server/web/context"
+	"github.com/BenAtIBM/beego/v2/server/web"
+	"github.com/BenAtIBM/beego/v2/server/web/context"
 )
 
 // limiterOption is constructor option
