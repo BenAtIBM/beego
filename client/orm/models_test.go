@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"

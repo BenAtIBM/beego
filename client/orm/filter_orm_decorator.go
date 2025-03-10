@@ -20,12 +20,12 @@ import (
 	"reflect"
 	"time"
 
-	utils2 "github.com/beego/beego/v2/client/orm/internal/utils"
+	utils2 "github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 
-	"github.com/beego/beego/v2/core/logs"
-	"github.com/beego/beego/v2/core/utils"
+	"github.com/BenAtIBM/beego/v2/core/logs"
+	"github.com/BenAtIBM/beego/v2/core/utils"
 )
 
 const (

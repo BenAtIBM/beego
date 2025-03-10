@@ -17,7 +17,7 @@ package orm
 import (
 	"testing"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/beego/beego/v2/client/orm/internal/utils"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 )
 
 var errSkipField = errors.New("skip field")

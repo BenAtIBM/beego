@@ -57,14 +57,14 @@ import (
 	"os"
 	"reflect"
 
-	iutils "github.com/beego/beego/v2/client/orm/internal/utils"
+	iutils "github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 
-	"github.com/beego/beego/v2/client/orm/clauses/order_clause"
-	"github.com/beego/beego/v2/client/orm/hints"
-	"github.com/beego/beego/v2/core/logs"
-	"github.com/beego/beego/v2/core/utils"
+	"github.com/BenAtIBM/beego/v2/client/orm/clauses/order_clause"
+	"github.com/BenAtIBM/beego/v2/client/orm/hints"
+	"github.com/BenAtIBM/beego/v2/core/logs"
+	"github.com/BenAtIBM/beego/v2/core/utils"
 )
 
 // DebugQueries define the debug

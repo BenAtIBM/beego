@@ -18,12 +18,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/beego/beego/v2/client/orm/internal/utils"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 
-	"github.com/beego/beego/v2/client/orm/clauses/order_clause"
-	"github.com/beego/beego/v2/client/orm/hints"
+	"github.com/BenAtIBM/beego/v2/client/orm/clauses/order_clause"
+	"github.com/BenAtIBM/beego/v2/client/orm/hints"
 )
 
 type colValue struct {

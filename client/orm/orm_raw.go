@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
-	"github.com/beego/beego/v2/client/orm/internal/utils"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 )
 
 // raw sql string prepared statement

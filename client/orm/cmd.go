@@ -21,9 +21,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/beego/beego/v2/client/orm/internal/utils"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/utils"
 
-	"github.com/beego/beego/v2/client/orm/internal/models"
+	"github.com/BenAtIBM/beego/v2/client/orm/internal/models"
 )
 
 type commander interface {
