@@ -1030,6 +1030,10 @@ func (p *ControllerRegister) serveHttp(ctx *beecontext.Context) {
 		ctx.Output.Header("Server", p.cfg.ServerName)
 	}
 
+	if p.cfg.Listen.EnableHTTPS && !p.cfg.Listen.EnableHTTP {
+		ctx.Output.Header("Strict-Transport-Security", "max-age=16070400; includeSubDomains")
+	}
+
 	urlPath := p.getUrlPath(ctx)
 
 	// filter wrong http method
